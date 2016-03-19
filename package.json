@@ -6,6 +6,7 @@
   "scripts": {
     "start": "abigail test PKG",
     "test": "mocha --compilers js:espower-babel/guess",
+    "lint": "eslint src test",
     "cover": "npm-run-all cover:*",
     "cover:test": "nyc --reporter=lcov --reporter=text npm test",
     "cover:report": "node -e \"if(process.env.TRAVIS){}else{process.exit(1)}\" && codeclimate-test-reporter < coverage/lcov.info || echo skip coverage report",
