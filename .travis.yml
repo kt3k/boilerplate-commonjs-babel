@@ -25,6 +25,7 @@ before_script:
   - npm prune
 script:
   - npm run cover
+  - npm run lint
 
 # Npm publish options
 before_deploy:
@@ -34,6 +35,6 @@ deploy:
   provider: npm
   email: i59naga@icloud.com
   api_key:
-    secure: 
+    secure:
   on:
     node: 4
