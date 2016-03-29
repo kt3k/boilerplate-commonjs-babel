@@ -10,7 +10,7 @@
     "cover": "abby cover:test, cover:report --no-watch",
     "cover:test": "nyc --reporter=lcov --reporter=text npm test",
     "cover:report": "node -e \"if(process.env.TRAVIS){}else{process.exit(1)}\" && codeclimate-test-reporter < coverage/lcov.info || echo skip coverage report",
-    "build": "NODE_ENV=production abby build:* --no-watch",
+    "build": "cross-env NODE_ENV=production abby build:* --no-watch",
     "build:compile": "babel -V && babel src --out-dir lib --source-maps"
   },
   "devDependencies": {
@@ -23,6 +23,7 @@
     "babel-preset-stage-1": "^6.5.0",
     "babel-register": "^6.7.2",
     "codeclimate-test-reporter": "^0.3.1",
+    "cross-env": "^1.0.7",
     "eslint": "2.2.0",
     "eslint-config-airbnb": "6.1.0",
     "mocha": "^2.4.5",
