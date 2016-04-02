@@ -5,13 +5,13 @@
   ],
   "scripts": {
     "start": "abby test --watch",
-    "test": "mocha --compilers js:babel-register",
+    "test": "mocha",
     "lint": "eslint src test",
     "cover": "abby cover:* --parse serial",
-    "cover:test": "nyc --reporter=lcov --reporter=text npm test",
+    "cover:test": "nyc --reporter=lcov --reporter=text mocha",
     "cover:report": "node -e \"if(process.env.TRAVIS){}else{process.exit(1)}\" && codeclimate-test-reporter < coverage/lcov.info || echo skip coverage report",
     "build": "cross-env NODE_ENV=production abby build:*",
-    "build:compile": "babel -V && babel src --out-dir lib --source-maps"
+    "build:compile": "babel -V && babel src --out-dir lib"
   },
   "abigail": {
     "plugins": {
