@@ -30,8 +30,8 @@ npm install your-module-name --save
 Development
 ---
 Requirement global
-* NodeJS v5.7.0
-* Npm v3.7.1
+* NodeJS v5.10.0
+* Npm v3.8.3
 
 ```bash
 git clone https://github.com/59naga/your-module-name
