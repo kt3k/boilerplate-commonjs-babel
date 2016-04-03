@@ -11,7 +11,7 @@
     "cover:test": "nyc --reporter=lcov --reporter=text mocha",
     "cover:report": "node -e \"if(process.env.TRAVIS){}else{process.exit(1)}\" && codeclimate-test-reporter < coverage/lcov.info || echo skip coverage report",
     "build": "cross-env NODE_ENV=production abby build:*",
-    "build:compile": "babel -V && babel src --out-dir lib"
+    "build:compile": "babel -V && babel src --out-dir lib --source-maps"
   },
   "abigail": {
     "plugins": {
