@@ -27,6 +27,22 @@ Installation
 npm install your-module-name --save
 ```
 
+Stacktrace was broken
+---
+published code is compressed and the source map is provided.
+not supported by the sourcemap in NodeJS. but this resolved in the [node-source-map-support](https://github.com/evanw/node-source-map-support#readme).
+
+```bash
+npm install source-map-support --save-dev
+```
+```js
+import 'source-map-support/register';
+```
+or...
+```bash
+$ mocha --require source-map-support/register
+```
+
 Development
 ---
 Requirement global
