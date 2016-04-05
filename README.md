@@ -29,6 +29,12 @@ npm install your-module-name --save
 
 Stacktrace was broken
 ---
+```bash
+node
+> require('./')('error')
+# TypeError: Cannot convert undefined or null to object
+# at f (/Users/59naga/your-module-name/lib/index.js:1:2469)
+```
 published code is compressed and the source map is provided.
 not supported by the sourcemap in NodeJS. but this resolved in the [node-source-map-support](https://github.com/evanw/node-source-map-support#readme).
 
