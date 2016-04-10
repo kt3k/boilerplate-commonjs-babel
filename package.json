@@ -29,7 +29,7 @@
     ]
   },
   "devDependencies": {
-    "abigail": "^1.4.3",
+    "abigail": "^1.6.1",
     "ava": "^0.14.0",
     "babel-cli": "^6.6.5",
     "babel-eslint": "^6.0.2",

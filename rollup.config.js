@@ -12,7 +12,13 @@ export default {
   format: 'umd',
   moduleName: pascalCase(require('./package.json').name),
   plugins: [
-    nodeResolve({ jsnext: true }),
+    nodeResolve({
+      jsnext: true,
+      skip: [
+        // here to keep the dependency
+        // (https://github.com/rollup/rollup-plugin-node-resolve#usage)
+      ],
+    }),
     commonjs(),
     json(),
     babel(),
