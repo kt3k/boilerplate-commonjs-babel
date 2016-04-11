@@ -6,5 +6,5 @@ import yourModuleName from '../src';
 
 // specs
 test('spec1', (t) => {
-  t.ok(yourModuleName() === 'bar');
+  t.truthy(yourModuleName() === 'bar');
 });
