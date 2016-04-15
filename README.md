@@ -8,6 +8,9 @@ Your Module Name(Upper Camel)
   <a href="https://travis-ci.org/59naga/your-module-name">
     <img src="http://img.shields.io/travis/59naga/your-module-name.svg?style=flat-square">
   </a>
+  <a href="https://ci.appveyor.com/project/59naga/your-module-name">
+    <img src="https://img.shields.io/appveyor/ci/59naga/your-module-name.svg?style=flat-square">
+  </a>
   <a href="https://codeclimate.com/github/59naga/your-module-name/coverage">
     <img src="https://img.shields.io/codeclimate/github/59naga/your-module-name.svg?style=flat-square">
   </a>
