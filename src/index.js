@@ -1,5 +1,5 @@
 /**
 * @module yourModuleName
-* @returns {string} output
+* @returns {object} output
 */
-export default () => 'foo';
+export default () => ({ foo: undefined });
